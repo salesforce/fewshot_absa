@@ -1,0 +1,3 @@
+
+python prepare_aspect_term_fewshot.py
+python prepare_aspect_category_fewshot.py

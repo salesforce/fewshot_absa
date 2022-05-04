@@ -1,0 +1,11 @@
+regex
+sentencepiece==0.1.91
+transformers==3.5.0
+datasets
+tensorboardX==1.8
+wordninja
+sklearn
+ipdb
+nltk
+english_words
+tqdm
