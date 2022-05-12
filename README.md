@@ -51,4 +51,4 @@ below is the code for running evaluation for some checkpoints
  #### 4- demo
 run a pretrained language model to generate aspect terms and aspect categories with their corresponding polarities 
 
-    ipython notebook demo.py
+    ipython notebook demo.ipynb
