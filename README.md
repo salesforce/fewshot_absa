@@ -15,10 +15,11 @@ Paper link: https://arxiv.org/abs/2204.05356
 
 ## Table of contents
 - [Installation](#installation)
-- [Preprocessinng](#preprocessing)
-- [Training](#training)
-- [Evaluation](#evaluation)
-- [Demo](#demo)
+- [Usage](#usage)
+    - [Preprocessinng](#preprocessing)
+    - [Training](#training)
+    - [Evaluation](#evaluation)
+    - [Demo](#demo)
 - [Citation](#citation)
 - [License](#license)
 
@@ -35,6 +36,8 @@ The package can be installed by running the following command.
 
     pip install -r requirements.txt
     
+## Usage
+This section explains steps to preprocess [Semeval14 Task 4](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and [Semeval16 Task 5](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) dataset and training the model. 
 
 ### Preprocessing 
 Run below commands to preprocess raw data and create training data for full-shot and fewshot training of autoregressive language model.
