@@ -1,7 +1,6 @@
 # A generative languege model for few-shot aspect-based sentiment analysis
 Authors: [Ehsan Hosseini-Asl](https://scholar.google.com/citations?user=I9w3ON4AAAAJ&hl=en), [Wenhao Liu](https://scholar.google.com/citations?user=BaRpQ_kAAAAJ&hl=en), [Caiming Xiong](https://scholar.google.com/citations?user=vaSdahkAAAAJ&hl=en) 
 
-<!-- *Findings of NAACL 2022* -->
 
 This repository contains the code of our [paper](https://arxiv.org/abs/2204.05356) which is published in 
 **Findings of NAACL 2022**. 
@@ -13,6 +12,7 @@ In this paper, we focus on aspect-based sentiment analysis, which involves extra
 
 Paper link: https://arxiv.org/abs/2204.05356
 
+
 ## Table of contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -22,7 +22,6 @@ Paper link: https://arxiv.org/abs/2204.05356
     - [Demo](#demo)
 - [Citation](#citation)
 - [License](#license)
-
 
 ### Installation
 
@@ -95,6 +94,7 @@ below is the code for running evaluation for some checkpoints
          
 ### Demo
 run a pretrained language model to generate aspect terms and aspect categories with their corresponding polarities 
+
 
     ipython notebook demo.ipynb
 
