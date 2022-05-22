@@ -5,6 +5,15 @@ Authors: [Ehsan Hosseini-Asl](https://scholar.google.com/citations?user=I9w3ON4A
 This repository contains the code of our [paper](https://arxiv.org/abs/2204.05356) which is published in 
 **Findings of NAACL 2022**. 
 
+Our proposed approach is based on autoregressive language modeling. Given the input review sentence, the model generates all aspect terms, aspect categories and their corresponding polarities in a single sequence generation.
+
+![Example 1:,](/images/exp1.gif)
+
+![Example 2:](/images/exp2.gif)
+
+![Example 3:](/images/exp3.gif)
+
+
 ## Introduction
 Sentiment analysis is an important task in natural language processing. In recent works, pre-trained language models are often used to achieve state-of-the-art results, especially when training data is scarce. It is common to fine-tune on the downstream task, usually by adding task-specific layers on top of the model. 
 
