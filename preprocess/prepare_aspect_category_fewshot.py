@@ -9,15 +9,10 @@ resource_dir = 'resources'
 
 files = [
     'semeval14_restaurants_aspect_category_single_train.txt',
-    # 'semeval14_restaurants_aspect_category_train.txt',
     'semeval16_restaurants_sb1_aspect_category_single_train.txt',
-    # 'semeval16_restaurants_sb1_aspect_category_train.txt',
     'semeval16_restaurants_sb2_aspect_category_single_train.txt',
-    # 'semeval16_restaurants_sb2_aspect_category_train.txt',
     'semeval16_laptops_sb1_aspect_category_single_train.txt',
-    # 'semeval16_laptops_sb1_aspect_category_train.txt',
     'semeval16_laptops_sb2_aspect_category_single_train.txt',
-    # 'semeval16_laptops_sb2_aspect_category_train.txt',
 ]
 
 shots = [1, 5, 10, 20, 50]
@@ -46,9 +41,6 @@ for fname in files:
 
                 text_multiple_category_shot.setdefault(d, []).append(category)
 
-        # num_data = int(shot * len(data))
-        # random.shuffle(data)
-        # data_shot = data[:num_data]
         save_name = os.path.join(resource_dir, f"{fname.split('/')[-1].split('.')[0]}_{shot}.txt")
         with open(save_name, 'wt') as f:
             for l in data_shot:

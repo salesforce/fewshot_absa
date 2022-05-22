@@ -60,8 +60,6 @@ for domain in ['restaurants', 'laptops']:
                     target_seq = []
                     for trg in target:
                         tmp = ' '.join(trg)
-                        # if tmp in target_seq:
-                        #     continue
                         if tmp not in target_seq:
                             target_seq.append(tmp)
 

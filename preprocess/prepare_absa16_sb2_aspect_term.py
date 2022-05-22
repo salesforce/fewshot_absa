@@ -18,9 +18,6 @@ for split in ['train', 'test', 'trial']:
             tmp = []
             for t in text:
                 if t in sb1_term_dic:
-                    # tmp.append(sb1_term_dic[t][0])
-                    # ipdb.set_trace()
-                    # tmp.extend(sb1_term_dic[t])
                     for term in sb1_term_dic[t]:
                         if term not in tmp:
                             tmp.append(term)

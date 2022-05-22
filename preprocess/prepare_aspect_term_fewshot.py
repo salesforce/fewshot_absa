@@ -5,25 +5,11 @@ import json
 import random
 
 resource_dir = 'resources'
-gpt2_dir = 'gpt2'
-t5_dir = 't5_dir'
 
 files = [
-    # 'semeval14_laptops_aspect_term_single_train.txt',
-    # 'semeval14_laptops_aspect_term_train.txt',
     'semeval14_laptops_aspect_term_single_ss_train.txt',
-    # 'semeval14_restaurants_aspect_term_single_train.txt',
-    # 'semeval14_restaurants_aspect_term_train.txt',
     'semeval14_restaurants_aspect_term_single_ss_train.txt',
-    # 'semeval16_restaurants_sb1_aspect_term_single_train.txt',
-    # 'semeval16_restaurants_sb1_aspect_term_train.txt',
     'semeval16_restaurants_sb1_aspect_term_single_ss_train.txt',
-    # 'semeval16_restaurants_sb2_aspect_term_single_train.txt',
-    # 'semeval16_restaurants_sb2_aspect_term_train.txt',
-    # 'semeval16_restaurants_sb2_aspect_term_single_ss_train.txt',
-    # 'semeval14_restaurants_aspect_term_aspect_category_train.txt',
-    # 'semeval16_restaurants_sb1_aspect_term_aspect_category_train.txt',
-    # 'semeval16_restaurants_sb2_aspect_term_aspect_category_train.txt'
 ]
 
 shots = [0.01, 0.05, 0.1, 0.2, 0.5]

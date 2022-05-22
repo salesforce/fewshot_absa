@@ -8,8 +8,6 @@ from glob import glob
 
 root = 'resources'
 data_dir = 'semeval14'
-# gpt2_dir = 'gpt2'
-# t5_dir = 't5'
 
 files = [
     'laptops_train.json',
@@ -19,9 +17,6 @@ files = [
     'restaurants_trial.json',
     'restaurants_test.json',
 ]
-
-# root = sys.argv[1]
-# files = glob(os.path.join(root, '*json'))
 
 
 for fname in files:

@@ -8,8 +8,6 @@ from glob import glob
 
 root = 'resources/semeval16'
 
-# root = sys.argv[1]
-# files = glob(os.path.join(root, '*json'))
 
 files = [
     'ABSA16_laptops_sb1_test.json',
@@ -30,14 +28,9 @@ for fname in files:
     if 'sb2' in fname:
         print(f"sb2, skipping {fname}")
         continue
-    # if 'trial' in fname:
-    #     print(f"trial, skipping {fname}")
-    #     continue
     print(f"\n processing {fname}")
 
     filename = os.path.join(root, fname)
-    # dataname = '_'.join(fname.split('.')[0].split('_')[:2])
-    # split = '_'.join(fname.split('.')[0].split('_')[1:])
     dataname, domain, subtask, split = fname.split('.')[0].split('_')
     data = json.load(open(os.path.join(root, fname), 'rt'))
     aspects_term_data = []
@@ -45,7 +38,6 @@ for fname in files:
     aspects_out_of_scope = []
 
     for review in data['Reviews']['Review']:
-        # try:
         if isinstance(review['sentences']['sentence'], list):
 
             for example in review['sentences']['sentence']:
@@ -113,13 +105,10 @@ for fname in files:
                         category = opinion['@category']
                         aspects_category.append((clean_text(category), clean_text(polarity)))
             if len(aspects_term) > 0:
-                # ipdb.set_trace()
                 aspects_term = list(set(aspects_term))
                 aspects_term_data.append((text, aspects_term))
             if len(aspects_category) > 0:
                 aspects_category_data.append((text, aspects_category))
-        # except:
-        #     ipdb.set_trace()
 
     with open(os.path.join(root, f"{dataname}_{domain}_{subtask}_aspect_term_{split}.json"), 'wt') as f:
         json.dump(aspects_term_data, f, indent=4, sort_keys=True)

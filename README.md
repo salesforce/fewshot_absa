@@ -39,7 +39,7 @@ The package can be installed by running the following command.
 This section explains steps to preprocess [Semeval14 Task 4](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and [Semeval16 Task 5](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) dataset and training the model. 
 
 ### Preprocessing 
-Run below commands to preprocess raw data and create training data for full-shot and fewshot training of autoregressive language model.
+First, download [Semeval14 Task 4](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and [Semeval16 Task 5](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and move them to the ```resources``` directory. Then, run below commands to preprocess raw data and create training data for full-shot and fewshot training of autoregressive language model.
 
     cd preprocess && bash preprocess_data.sh
 
