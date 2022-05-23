@@ -40,9 +40,13 @@ The package general requirements are
 - Pytorch >= 1.7.1 (installation instructions [here](https://pytorch.org/))
 - Transformers >= 4.0.0 (installation instructions [here](https://huggingface.co/transformers/))
  
-The package can be installed by running the following command.  
+1- The package can be installed by running the following command.  
 
     pip install -r requirements.txt
+
+2- Running inside docker container
+
+    docker build -t <image_name>:<tag> -f Dockerfile
     
 ## Usage
 This section explains steps to preprocess [Semeval14 Task 4](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and [Semeval16 Task 5](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) dataset and training the model. 
