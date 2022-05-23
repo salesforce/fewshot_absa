@@ -5,7 +5,7 @@ import json
 import random
 import ipdb
 
-resource_dir = 'resources'
+resource_dir = '../resources'
 gpt2_dir = 'gpt2'
 sst5_dir = 'SST-5'
 

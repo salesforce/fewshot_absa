@@ -4,7 +4,7 @@ from glob import glob
 import json
 import random
 
-resource_dir = 'resources'
+resource_dir = '../resources'
 
 files = [
     'semeval14_laptops_aspect_term_single_ss_train.txt',

@@ -6,7 +6,7 @@ import ipdb
 from util.clean import clean_text
 from glob import glob
 
-root = 'resources/semeval16'
+root = '../resources/semeval16'
 
 
 files = [

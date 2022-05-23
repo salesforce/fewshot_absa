@@ -38,7 +38,7 @@ The package general requirements are
 
 - Python >= 3.6
 - Pytorch >= 1.7.1 (installation instructions [here](https://pytorch.org/))
-- Transformers >= 3.5.0 (installation instructions [here](https://huggingface.co/transformers/))
+- Transformers >= 4.0.0 (installation instructions [here](https://huggingface.co/transformers/))
  
 The package can be installed by running the following command.  
 
@@ -48,7 +48,10 @@ The package can be installed by running the following command.
 This section explains steps to preprocess [Semeval14 Task 4](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and [Semeval16 Task 5](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) dataset and training the model. 
 
 ### Preprocessing 
-First, download [Semeval14 Task 4](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and [Semeval16 Task 5](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and move them to the ```resources``` directory. Then, run below commands to preprocess raw data and create training data for full-shot and fewshot training of autoregressive language model.
+First, create a directory named `resources` and download [Semeval14 Task 4](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and [Semeval16 Task 5](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and move them to the ```resources``` directory. There should be two subdirectories `semeval14` and `semeval16`. 
+
+Then, run below commands to preprocess raw data and create training data for full-shot and fewshot training of autoregressive language model.
+
 
     cd preprocess && bash preprocess_data.sh
 

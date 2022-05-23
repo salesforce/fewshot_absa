@@ -4,7 +4,7 @@ import os, sys
 from glob import glob
 import ipdb
 
-data_dir = 'resources'
+data_dir = '../resources'
 gpt2_dir = 'gpt2'
 
 # preprocess semeval14

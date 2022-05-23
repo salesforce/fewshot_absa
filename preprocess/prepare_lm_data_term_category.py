@@ -4,7 +4,7 @@ import os, sys
 from glob import glob
 import ipdb
 
-data_dir = 'resources'
+data_dir = '../resources'
 gpt2_dir = 'gpt2'
 
 # preprocess semeval14
@@ -16,7 +16,6 @@ for data_name in ['semeval14']:
             data_term = json.load(open(filename_term, 'rt'))
             data_category = json.load(open(filename_category, 'rt'))
             data_dict = {}
-            # category_dict = {}
             for text, target in data_term:
                 data_dict[text] = {}
                 data_dict[text]['term'] = target

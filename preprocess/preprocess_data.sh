@@ -1,4 +1,12 @@
 
+export RESOURCE_DIR=../resources
+export SEMEVAL14=$RESOURCE_DIR/semeval14
+export SEMEVAL16=$RESOURCE_DIR/semeval16
+
+# convert xml to jason
+python xml_to_json.py $SEMEVAL14
+python xml_to_json.py $SEMEVAL16
+
 # post process raw files (ABSA14)
 python prepare_absa14_data.py
 

@@ -5,7 +5,7 @@ import json
 import random
 import ipdb
 
-resource_dir = 'resources'
+resource_dir = '../resources'
 
 files = [
     'semeval14_restaurants_aspect_category_single_train.txt',

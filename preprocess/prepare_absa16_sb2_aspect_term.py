@@ -3,7 +3,7 @@ import json
 import os, sys
 import ipdb
 
-data_dir = 'resources/semeval16'
+data_dir = '../resources/semeval16'
 
 for split in ['train', 'test', 'trial']:
     for domain in ['restaurants', 'laptops']:

@@ -5,7 +5,7 @@ from glob import glob
 import ipdb
 import csv
 
-data_dir = 'resources'
+data_dir = '../resources'
 gpt2_dir = 'gpt2'
 
 sst2_labels = {
