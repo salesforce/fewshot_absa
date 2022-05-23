@@ -26,7 +26,7 @@ import torch.nn as nn
 from torch.nn import CrossEntropyLoss, MSELoss
 
 from transformers.activations import ACT2FN
-from transformers.configuration_gpt2 import GPT2Config
+from transformers.models.gpt2 import GPT2Config
 from transformers.file_utils import (
     ModelOutput,
     add_code_sample_docstrings,
