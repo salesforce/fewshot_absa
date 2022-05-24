@@ -49,10 +49,10 @@ The package general requirements are
     docker build -t <image_name>:<tag> -f Dockerfile
     
 ## Usage
-This section explains steps to preprocess [Semeval14 Task 4](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and [Semeval16 Task 5](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) dataset and training the model. 
+This section explains steps to preprocess [Semeval14 Task 4](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and [Semeval16 Task 5](https://alt.qcri.org/semeval2016/task5/index.php?id=data-and-tools) dataset and training the model. 
 
 ### Preprocessing 
-First, create a directory named `resources` and download [Semeval14 Task 4](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and [Semeval16 Task 5](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and move them to the ```resources``` directory. There should be two subdirectories `semeval14` and `semeval16`. 
+First, create a directory named `resources` and download [Semeval14 Task 4](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and [Semeval16 Task 5](https://alt.qcri.org/semeval2016/task5/index.php?id=data-and-tools) and move them to the ```resources``` directory. There should be two subdirectories `semeval14` and `semeval16`. 
 
 Then, run below commands to preprocess raw data and create training data for full-shot and fewshot training of autoregressive language model.
 
