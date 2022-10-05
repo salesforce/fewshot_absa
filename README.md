@@ -54,6 +54,26 @@ This section explains steps to preprocess [Semeval14 Task 4](https://alt.qcri.or
 ### Preprocessing 
 First, create a directory named `resources` and download [Semeval14 Task 4](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) and [Semeval16 Task 5](https://alt.qcri.org/semeval2016/task5/index.php?id=data-and-tools) and move them to the ```resources``` directory. There should be two subdirectories `semeval14` and `semeval16`. 
 
+#### Convert XML to JSON and rename filenames to simple format
+
+#### Rename filenames to simple format
+
+[//]: # ([//]: # &#40;Semeval16 Task 5 SB2 task files&#41;)
+[//]: # (First, convert downloaded xml files to json using below command,)
+
+[//]: # ()
+[//]: # (    cd resources && python preprocess/xml_to_json.py .)
+
+Rename the downloaded `xml` files according to below format. 
+
+[//]: # (for sub-task 2 by simply removing "_v2" from filename. An example is shown below, )
+
+    mv ABSA16_Restaurants_Train_SB1_v2.xml ABSA16_restaurants_train_sb1.xml 
+
+    mv EN_REST_SB1_TEST.xml.gold ABSA16_restaurants_sb1.test.xml
+
+
+#### Running preprocess script
 Then, run below commands to preprocess raw data and create training data for full-shot and fewshot training of autoregressive language model.
 
 
