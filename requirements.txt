@@ -1,6 +1,6 @@
 regex
 sentencepiece==0.1.94
-transformers==4.0.0
+transformers==4.30.0
 datasets
 tensorboardX==1.8
 wordninja
